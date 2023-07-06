@@ -1,8 +1,8 @@
-import { Header } from "./core/components/Header";
+import { AppRoutes } from "./AppRoutes";
 
 function App() {
   return (
-    <Header/>
+    <AppRoutes />
   );
 }
 

@@ -1,0 +1,35 @@
+.title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.main {
+
+    height: 456px;
+    width: 612px;
+    margin: 120px 0px 0px 120px;
+
+    .text {
+        height: 216px;
+        margin: 25px 0px 50px 0px;
+        p {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 36px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #5A6774;
+
+            a {
+                text-decoration: none;
+                color: #1890FF;
+            }
+
+        }
+    }
+
+
+}

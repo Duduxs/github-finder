@@ -9,6 +9,7 @@ import { Chip } from './components/Chip';
 import ImageLoader from './components/Loaders/Image';
 import LineLoader from './components/Loaders/Line';
 import ChipLoader from './components/Loaders/Chip';
+import { FormatDate } from 'core/utils/formatter';
 
 export const Search = () => (
     <div>
@@ -22,6 +23,7 @@ export const Search = () => (
 
         <div className="github-result-data-wrapper">
             <div className="github-result-left">
+                {/* <ImageLoader/> */}
                 <div className="github-result-image">
                     <img src="https://avatars.githubusercontent.com/u/53549133?v=4" alt="" />
                 </div>
@@ -30,20 +32,20 @@ export const Search = () => (
                 </div>
             </div>
             <div className="github-result-right">
-                {/* <div className="information-chips">
+                <div className="information-chips">
                     <Chip title='Repositórios públicos' value='62' />
                     <Chip title='Seguidores' value='127' />
                     <Chip title='Seguindo' value='416' />
-                </div> */}
-                <ChipLoader/>
-                <LineLoader/>
-                {/* <div className="information-panel">
+                </div>
+                {/* <ChipLoader/>
+                <LineLoader/> */}
+                <div className="information-panel">
                     <h1>Informações</h1>
                     <Line logo={enterpriseLogo} logoAlternativeText='Logo da empresa' title='Empresa' value='@ZupIT' />
                     <Line logo={websiteLogo} logoAlternativeText='Website/Blog do usuário' title='Website/Blog' value='https://thewashington.dev' />
                     <Line logo={addressLogo} logoAlternativeText='Localidade do usuário' title='Localidade' value='Uberlândia' />
-                    <Line logo={calendarLogo} logoAlternativeText='Data de criação da conta do usuário' title='Membro desde' value='19/10/2013' />
-                </div> */}
+                    <Line logo={calendarLogo} logoAlternativeText='Data de criação da conta do usuário' title='Membro desde' value={FormatDate('2019-08-01T03:18:00Z')} />
+                </div>
             </div>
 
         </div>

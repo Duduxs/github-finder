@@ -1,15 +1,14 @@
-.data-wrapper {
+.search-data-wrapper {
     height: 270px;
     width: auto;
     border-radius: 16px;
     background-color: #E6F7FF;
     margin: 54px 90px 0px 90px;
 
-    .data-content {
+    .search-data-content {
         width: 676px;
-        height: 162px;
-        position: fixed;
-        margin: 60px 0px 40px 90px;
+        padding-top: 65px;
+        margin: 50px 0px 40px 90px;
 
         h1 {
             font-size: 38px;
@@ -20,6 +19,9 @@
         }
 
         input {
+            font-family: Roboto;
+            margin-top: 6px;
+            margin-bottom: 24px;
             height: 40px;
             width: 676px;
             padding-left: 17px;
@@ -36,6 +38,64 @@
             }
         }
 
+    }
+
+}
+
+.github-result-data-wrapper {
+    display: flex;
+    border-radius: 8px;
+    width: auto;
+    margin: 50px 90px 72px 90px;
+    background-color: #F5F5F5;
+
+    .github-result-image {
+        img {
+            margin: 25px 0px 0px 30px;
+            height: 284px;
+            width: 280px;
+            border-radius: 50px;
+        }
+    }
+
+    .github-result-btn-see-profile {
+        Button {
+            margin: 18px 0px 30px 30px
+        }
+    }
+
+    .github-result-right {
+        
+        
+        .information-chips {
+            display: flex;
+            column-gap: 10px;
+            margin: 23px 0px 0px 45px;
+        }
+
+        .information-panel {
+            margin: 15px 25px 0px 45px;
+            height: 245px;
+            width: 870px;
+            background-color: #FFFFFF;
+            border-radius: 6px;
+            border: 1px;
+            border-style: solid;
+            border-color: #D9D9D9;
+
+            h1 {
+                margin-top: 8px;
+                margin-left: 14px;
+                margin-bottom: 20px;
+                color: #1890FF;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 28px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+
+        }
     }
 
 }
